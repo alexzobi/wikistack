@@ -1,0 +1,29 @@
+{
+  "name": "wikistack",
+  "version": "1.0.0",
+  "description": "Wikipedia clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scl963/wikistack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scl963/wikistack/issues"
+  },
+  "homepage": "https://github.com/scl963/wikistack#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.1",
+    "npm": "^5.7.1",
+    "nunjucks": "^3.1.2",
+    "pg": "^7.4.1",
+    "postgresql": "0.0.1"
+  }
+}
