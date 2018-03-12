@@ -4,7 +4,8 @@
   "description": "Wikipedia clone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
     "nodemon": "^1.17.1",
     "npm": "^5.7.1",
     "nunjucks": "^3.1.2",
-    "pg": "^7.4.1",
-    "postgresql": "0.0.1"
+    "pg": "^6.4.2",
+    "postgresql": "0.0.1",
+    "sequelize": "^4.35.2"
   }
 }
