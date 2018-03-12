@@ -1,10 +1,10 @@
-var express = require("express");
-var app = express();
-var nunjucks = require("nunjucks");
-var bodyParser = require("body-parser");
-var morgan = require("morgan");
-var routes = require("./routes");
-var models = require('./models');
+const express = require("express");
+const app = express();
+const nunjucks = require("nunjucks");
+const bodyParser = require("body-parser");
+const morgan = require("morgan");
+const routes = require("./routes");
+const models = require('./models');
 
 
 app.set("view engine", "html");
@@ -18,7 +18,7 @@ models.db.sync({force: true})
 })
 .catch(console.error.bind(console));
 
-app.use(morgan("div"));
+app.use(morgan("dev"));
 
 app.use("/", routes);
 

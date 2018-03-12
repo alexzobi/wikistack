@@ -17,6 +17,10 @@ const Page = db.define('page', {
     },
     status: {
         type: Sequelize.ENUM('open', 'closed')
+    },
+    route: {
+        type: Sequelize.VIRTUAL,
+        get(){return '/wiki/' + this.urlTitle}
     }
 });
 
