@@ -11,6 +11,9 @@ app.set("view engine", "html");
 app.engine("html", nunjucks.render);
 nunjucks.configure("views", {noCache : true});
 
+app.use(bodyParser.urlencoded( {extended:true}));
+app.use(bodyParser.json());
+
 models.db.sync({force: true})
 .then(function (){
     console.log('All tables created!');
@@ -22,7 +25,5 @@ app.use(morgan("dev"));
 
 app.use("/", routes);
 
-app.use(express.static(__dirname + "/public"));
+//app.use(express.static(__dirname + "/public"));
 
-app.use(bodyParser.urlencoded( {extended:true}));
-app.use(bodyParser.json());

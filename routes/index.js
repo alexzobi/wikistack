@@ -7,6 +7,7 @@ const userRouter = require('./user');
 
 router.get('/', (req, res) => {
    // need a res render to populate homepage
+   console.log('root reached');
    res.render('index', function(req, res){
    })   
 });
@@ -15,10 +16,10 @@ router.get('/users/', function(req, res, next) {
     res.redirect('/wiki/');
   });
 
-router.post('/users/', function(req, res, next) {
-    console.log('users post');
-    res.redirect('/');
-  });
+// router.post('/users/', function(req, res, next) {
+//     console.log('users post');
+//     res.redirect('/');
+//   });
 
 router.put('/users/', function(req, res, next) {
     res.redirect('/');
